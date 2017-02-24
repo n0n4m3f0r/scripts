@@ -1,7 +1,5 @@
 BITS 32
 
-section .bss
-buf	resb 1
 
 section .text
 
