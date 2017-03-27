@@ -4,8 +4,13 @@ from socket import *
 import time
 '''
 it's a format string vulnerability in do_net function, the binary was nx but we couln't leak libc,
-
-after digging in the binary i found the ssend_file function, which take a file name and send its content through the sock fd
+gdb-peda$ checksec 
+CANARY    : disabled
+FORTIFY   : disabled
+NX        : ENABLED
+PIE       : disabled
+RELRO     : disabled
+after digging in the binary we found the ssend_file function, which take a file name  as variable and send its content through the sock fd
 best option was to overwrite puts GOT table puts(&buf) -> ssendfile(&buf) -> ssend_file(flag.txt).
 Not so hard, thanks to Hackfest organizers
 '''
